@@ -2,15 +2,31 @@ from lxml import etree
 import argparse
 import json
 
-def get_track_connections(tracks):
-    track_connections = dict()
+def get_intersections(tracks):
+    intersections = dict()
 
     for track in tracks:
-        track_name = track.attrib['name']
-        if track_name not in track_connections:
-            track_connections[track_name] = {'endNode': track.attrib['endNode'], 'startNode': track.attrib['startNode']}
-    
-    return track_connections
+        track_name = track.attrib['name']        
+        track_intersections = [track.attrib['startNode'], track.attrib['endNode']]
+
+        for intersection in track_intersections:
+            if not intersection:
+                continue
+            if intersection not in intersections:
+                intersections[intersection] = []
+            intersections[intersection].append(track_name)
+                    
+    return intersections
+
+def get_connected_tracks(track, intersections):
+    connected_tracks = set()
+    for intersection_tracks in intersections.values():
+        if track in intersection_tracks:
+            connected_tracks.update(intersection_tracks)
+    connected_tracks.discard(track)
+
+    return list(connected_tracks)
+
 
 def main():
 
@@ -18,7 +34,7 @@ def main():
     root = tree.getroot()
 
     tracks = root.findall('Network/SubNetworks/SubNetwork/RoadNetwork/Tracks/Track')
-    track_connections = get_track_connections(tracks)
+    intersections = get_intersections(tracks)
 
     data = dict()
     portion_id = 0
@@ -28,10 +44,7 @@ def main():
         track_name = track.attrib['name']
         track_length = 0
         portions = track.findall('Portions/Portion')
-
-        # Handle Abscissa orientation
-        connected_intersection = track_connections[track_name]['startNode']
-        connected_tracks = [track for track, c in track_connections.items() if c['endNode'] == connected_intersection]
+        connected_tracks = get_connected_tracks(track_name, intersections)
 
         last_portion_abscissa = 0
         portions_data = dict()
