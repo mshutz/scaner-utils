@@ -39,3 +39,24 @@ Extract track info (connected tracks, length, portions, lanes, ...) in the defin
 ```bash
 python scripts/rnd_extract_connections.py --input btc_lrn.rnd --output btc_lrn.json --lane_types "paved express" "paved entry" paved
 ```
+
+## Terrain File Portion Naming
+
+`rnd_name_portions.py`
+
+Assign unique names to all portions in the tracks of a Terrain (.rnd) file.
+
+- Iterates through all tracks and assigns a unique name (incremental ID) to each portion.
+
+Open repaired file in SCANeR and save it.
+
+**Arguments:**
+
+- `--input`: Input Terrain (.rnd) file path.
+- `--output`: Output Terrain (.rnd) file path. Defaults to input file name.
+
+**Example usage:**
+
+```bash
+python scripts/rnd_name_portions.py --input za_driver_evaluation_highway_lrn.rnd --output za_driver_evaluation_highway_lrn_named.rnd
+```
