@@ -60,3 +60,30 @@ Open repaired file in SCANeR and save it.
 ```bash
 python scripts/rnd_name_portions.py --input za_driver_evaluation_highway_lrn.rnd --output za_driver_evaluation_highway_lrn_named.rnd
 ```
+
+## Scenario File Initial Speed Setup
+
+`scenario_set_initial_speed.py`
+
+Set initial speed for (swarm) vehicles in a scenario file.
+
+**Arguments:**
+
+- `-i`, `--input`: Input Scenario (.sce) file path (required)
+- `-o`, `--output`: Output Scenario (.sce) file path. Defaults to input filename with _initial_speed_set suffix
+- `-s`, `--speed`: Initial speed value in km/h. (required)
+- `-w`, `--swarm_only`: Flag to only modify non-swarm vehicles (exclude vehicles with '[' in name)
+- `-v`, `--verbose`: Flag to print detailed information about changes
+
+**Example usage:**
+
+```bash
+# Set speed for non-swarm vehicles with verbose output
+python scripts/scenario_set_initial_speed.py -i scenario.sce -s 100 -w -v
+
+# Set speed with custom output file
+python scripts/scenario_set_initial_speed.py --input scenario.sce --output modified.sce --speed 80 --swarm_only
+
+# Simple usage (output will be scenario_initial_speed_set.sce)
+python scripts/scenario_set_initial_speed.py -i scenario.sce -s 100 -w
+```
