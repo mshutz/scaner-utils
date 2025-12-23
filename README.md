@@ -107,11 +107,19 @@ The script traverses the configuration XML and finds corresponding elements in t
 
 ```bash
 # Merge configuration with verbose output
-python scripts/scenario_generator.py -c configuration_de.xml -i scenario_si.sce -v
+python scripts/scenario_generator.py -c configs/configuration_de.xml -i scenario_si.sce -v
 
 # Specify custom output file
-python scripts/scenario_generator.py --config configuration_de.xml --input scenario_si.sce --output scenario_de.sce
+python scripts/scenario_generator.py --config configs/configuration_de.xml --input scenario_si.sce --output scenario_de.sce
 
 # Simple usage (output will be scenario_si_generated.sce)
-python scripts/scenario_generator.py -c configuration_de.xml -i scenario_si.sce
+python scripts/scenario_generator.py -c configs/configuration_de.xml -i scenario_si.sce
 ```
+
+### Configuration Files
+
+Configuration files used by the scenario generator:
+
+- `configuration_de.xml` - German configuration
+- `configuration_en.xml` - English configuration
+- `configuration_si.xml` - Slovenian configuration
