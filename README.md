@@ -87,3 +87,31 @@ python scripts/scenario_set_initial_speed.py --input scenario.sce --output modif
 # Simple usage (output will be scenario_initial_speed_set.sce)
 python scripts/scenario_set_initial_speed.py -i scenario.sce -s 100 -w
 ```
+
+## Scenario Generator
+
+`scenario_generator.py`
+
+Merge configuration XML file into scenario XML file (.sce) by updating matching elements based on their identifiers (name or id tags).
+
+The script traverses the configuration XML and finds corresponding elements in the scenario XML by matching their paths and identifiers. When a match is found, it updates the scenario element's children with values from the configuration, while preserving the identifier itself and maintaining proper XML structure.
+
+**Arguments:**
+
+- `-c`, `--config`: Configuration XML file path (required)
+- `-i`, `--input`: Input scenario (.sce) file path (required)
+- `-o`, `--output`: Output scenario (.sce) file path. Defaults to input filename with _generated suffix
+- `-v`, `--verbose`: Flag to print detailed information about changes
+
+**Example usage:**
+
+```bash
+# Merge configuration with verbose output
+python scripts/scenario_generator.py -c configuration_de.xml -i scenario_si.sce -v
+
+# Specify custom output file
+python scripts/scenario_generator.py --config configuration_de.xml --input scenario_si.sce --output scenario_de.sce
+
+# Simple usage (output will be scenario_si_generated.sce)
+python scripts/scenario_generator.py -c configuration_de.xml -i scenario_si.sce
+```
