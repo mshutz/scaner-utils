@@ -135,8 +135,50 @@
             <name>go_straight</name>
             <path>navigation/de/go_straight_long.wav</path>
         </Sound>
-
-        <!-- Police Vehicles -->
+        <Vehicle>
+            <name>[EGO]</name>
+            <modelName>ExecutiveCar</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Intro] Car in intro phase</name>
+            <modelName>Citroen_C2</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Intro] Slow truck</name>
+            <modelName>Renault_Master</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Intro] Car in the opposite lane</name>
+            <modelName>BMW_S3_Alpine_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] First merge vehicle</name>
+            <modelName>Opel_Vivaro_Spring_Green</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Emergency lane vehicle</name>
+            <modelName>Citroen_C6_Red</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Second merge vehicle</name>
+            <modelName>Ford_Escape_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Aggressive exit vehicle</name>
+            <modelName>Jaguar_F_Pace_Orange</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Slow vehicle</name>
+            <modelName>Opel_Vivaro_Roadworks</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Crashed car 1</name>
+            <modelName>Peugeot_4008_Dark_Red</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Crashed car 2</name>
+            <modelName>Peugeot_301_Blue</modelName>
+        </Vehicle>
         <Vehicle>
             <name>[Highway] Police car 1</name>
             <modelName>Police_Vehicle_DE</modelName>
@@ -149,137 +191,309 @@
             <name>[Highway] Police car 3</name>
             <modelName>Police_Vehicle_DE</modelName>
         </Vehicle>
-
-        <!-- [Highway] [Swarm] -->
         <Vehicle>
-            <name>[Highway] [Swarm] 0</name>
-            <modelName>BMW_S3_Havanna</modelName>
+            <name>[Highway] Man in the accident 1</name>
+            <modelName>Man_European_04</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 1</name>
-            <modelName>BMW_S3_Alpine_White</modelName>
+            <name>[Highway] Man in the accident 2</name>
+            <modelName>Man_Summer_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 2</name>
-            <modelName>Peugeot_2008_Blue</modelName>
+            <name>[Highway] Roadworks van 1</name>
+            <modelName>Opel_Vivaro_Roadworks</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 3</name>
-            <modelName>Volkswagen_Touran_Pure_White</modelName>
+            <name>[Highway] Road worker 1</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 4</name>
-            <modelName>Renault_D14</modelName>
+            <name>[Highway] Road worker 2</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 5</name>
-            <modelName>Toyota_Corolla_Classic_Silver_Metal</modelName>
+            <name>[Highway] Road worker 3</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 6</name>
-            <modelName>Renault_Kadjar_2016</modelName>
+            <name>[Highway] Road worker 4</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 7</name>
-            <modelName>Peugeot_4008_Grey</modelName>
+            <name>[Highway] Road worker 5</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 8</name>
-            <modelName>Peugeot_301_White</modelName>
+            <name>[Highway] Road worker 6</name>
+            <modelName>Man_Casual_03</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 9</name>
+            <name>[Highway] Road worker 7</name>
+            <modelName>Man_Casual_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Road worker 8</name>
+            <modelName>Man_Casual_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] Roadworks van 2</name>
+            <modelName>Opel_Vivaro_Roadworks</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Man crossing street</name>
+            <modelName>Man_Summer_06</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bicycle crossing street</name>
+            <modelName>Bicycle_Man01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Cut in car</name>
+            <modelName>BMW_S3_Melbourne_Red</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] First kid crossing street</name>
+            <modelName>Kid_Boy_02</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Second kid crossing street</name>
+            <modelName>Kid_Girl_02</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Mother crossing street</name>
+            <modelName>Woman_Pushchair_European</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Son crossing street</name>
+            <modelName>Kid_Boy_European</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Delivery crossing street</name>
+            <modelName>Moped_Pizza</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus</name>
+            <modelName>Iveco_Irisbus</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Car behind bus</name>
+            <modelName>Citroen_C3_Green</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Motorbike</name>
             <modelName>Honda_CBR1000RR</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 10</name>
-            <modelName>Citroen_C2</modelName>
+            <name>[City] Car behind motorbike</name>
+            <modelName>Volkswagen_Touran_Venetian_Green_Pearl</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 11</name>
-            <modelName>Citroen_DS3_Blue</modelName>
+            <name>[City] [Traffic] Horning car</name>
+            <modelName>Renault_Zoe_Glacier_White</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 12</name>
-            <modelName>Volkswagen_Arteon_R_Line_Grey</modelName>
+            <name>[City] [Traffic] Car 1</name>
+            <modelName>Nissan_X-Trail_2015_white</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 13</name>
-            <modelName>Renault_Zoe_Energy_Blue</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 14</name>
-            <modelName>Renault_Megane3_Grey</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 15</name>
-            <modelName>Peugeot_108_Barcode</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 16</name>
-            <modelName>Lexus_NX_Nebula_Gray_Pearl</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 17</name>
-            <modelName>Nissan_Altima</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 18</name>
-            <modelName>Peugeot_RCZ_Blue</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 19</name>
-            <modelName>Toyota_Corolla_Slate_Metal</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 20</name>
-            <modelName>Citroen_C6_Black</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 21</name>
-            <modelName>Audi_Q8_Black</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 22</name>
-            <modelName>Citroen_DS3_Blue</modelName>
-        </Vehicle>
-        <Vehicle>
-            <name>[Highway] [Swarm] 23</name>
+            <name>[City] [Traffic] Car 2</name>
             <modelName>Nissan_Qashqai_Dualis_2010</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 24</name>
-            <modelName>Peugeot_301_White</modelName>
+            <name>[City] [Traffic] Car 3</name>
+            <modelName>Peugeot_2008_Black</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 25</name>
-            <modelName>Range_Rover_Sport_Green</modelName>
+            <name>[City] [Traffic] Car 4</name>
+            <modelName>Ford_Escape_Gold</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 26</name>
-            <modelName>Renault_Megane3_Grey</modelName>
+            <name>[City] [Traffic] Car 5</name>
+            <modelName>Citroen_C3_Green</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 27</name>
-            <modelName>Toyota_Corolla_Barcelona_Red_Metal</modelName>
+            <name>[City] [Traffic] Car 6</name>
+            <modelName>BMW_S3_Alpine_White</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 28</name>
-            <modelName>Citroen_C6_Red</modelName>
+            <name>[City] [Traffic] Car 7</name>
+            <modelName>Ford_Escape_Gold</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 29</name>
-            <modelName>Peugeot_RCZ_White</modelName>
+            <name>[City] [Traffic] Car 8</name>
+            <modelName>Nissan_Leaf_Pearl_Black</modelName>
         </Vehicle>
         <Vehicle>
-            <name>[Highway] [Swarm] 30</name>
-            <modelName>Renault_Clio_2020_Gris_Titanium</modelName>
+            <name>[City] [Traffic] Car 9</name>
+            <modelName>Peugeot_108_Kilt</modelName>
         </Vehicle>
-
-        <!-- [Highway] Blocking -->
-         <Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Car 10</name>
+            <modelName>Nissan_Altima</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Stop sign street car 1</name>
+            <modelName>Renault_Zoe_Glacier_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Stop sign street car 2</name>
+            <modelName>Peugeot_2008_Spirit_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Stop sign street car 3</name>
+            <modelName>Toyota_Corolla_Super_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Double red light street car 1</name>
+            <modelName>Peugeot_RCZ_Dark_Gray</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Double red light street car 2</name>
+            <modelName>Renault_Espace_Black_US</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street car 1</name>
+            <modelName>Volkswagen_Touran_Venetian_Green_Pearl</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street car 2</name>
+            <modelName>Volkswagen_Touran_Pure_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street car 3</name>
+            <modelName>Renault_Mascott</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street car 4</name>
+            <modelName>Yamaha_XJ600</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street car 5</name>
+            <modelName>Peugeot_508_Brun_Calern</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Car 11</name>
+            <modelName>Renault_Zoe_Calico_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 1</name>
+            <modelName>Man_Casual_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 2</name>
+            <modelName>Man_European_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 3</name>
+            <modelName>Woman_Summer_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 4</name>
+            <modelName>Man_European_02</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 5</name>
+            <modelName>Man_Summer_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 6</name>
+            <modelName>Man_Summer_07</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 7</name>
+            <modelName>Kid_Boy_Summer_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 8</name>
+            <modelName>Woman_European_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 9</name>
+            <modelName>Woman_Summer_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 10</name>
+            <modelName>Man_Summer_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 11</name>
+            <modelName>Man_Summer_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 12</name>
+            <modelName>Man_European_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 13</name>
+            <modelName>Kid_Gril_Summer_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 14</name>
+            <modelName>Man_Summer_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 15</name>
+            <modelName>Man_Casual_03</modelName>
+        </Vehicle>
+        <Vehicle>
             <name>[Highway] Blocking vehicle 1</name>
             <modelName>Citroen_C3_Light_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Running kid 1</name>
+            <modelName>Kid_Boy_02</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Running kid 2</name>
+            <modelName>Kid_Girl_02</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Woman with second kid</name>
+            <modelName>Woman_Summer_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 16</name>
+            <modelName>Man_Summer_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 17</name>
+            <modelName>Man_European_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 18</name>
+            <modelName>Man_Summer_03</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 19</name>
+            <modelName>Woman_European_04</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 20</name>
+            <modelName>Man_Summer_07</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street bicycle 1</name>
+            <modelName>Bicycle_Man01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street bicycle 2</name>
+            <modelName>Bicycle_Woman01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street bicycle 3</name>
+            <modelName>Bicycle_Location_Woman01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street bicycle 4</name>
+            <modelName>Bicycle_Man01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Bus street bicycle 5</name>
+            <modelName>Bicycle_Woman01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] [Traffic] Pedestrian 21</name>
+            <modelName>Man_Summer_03</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] Blocking vehicle 2</name>
@@ -445,9 +659,23 @@
             <name>[Highway] Blocking police vehicle 2</name>
             <modelName>Police_Vehicle_DE</modelName>
         </Vehicle>
-
-        <!-- [City] [Parked] -->
-         <Vehicle>
+        <Vehicle>
+            <name>[City] Emi</name>
+            <modelName>Woman_Allseasons_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Wrongly parked van</name>
+            <modelName>Opel_Vivaro_Glacier_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Man between cars</name>
+            <modelName>Man_European_01</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[City] Dog</name>
+            <modelName>Pet_Labrador_Dog</modelName>
+        </Vehicle>
+        <Vehicle>
             <name>[City] [Parked] Parked car 1</name>
             <modelName>Ford_Kuga_White_UK_parked</modelName>
         </Vehicle>
@@ -614,6 +842,126 @@
         <Vehicle>
             <name>[City] [Parked] Parked car 42</name>
             <modelName>Renault_Megane3_Grey_parked</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 0</name>
+            <modelName>BMW_S3_Havanna</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 1 </name>
+            <modelName>Dodge_Ram_2500_Green</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 2</name>
+            <modelName>Peugeot_2008_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 3 </name>
+            <modelName>Ford_F150_Darkblue_US</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 4</name>
+            <modelName>Renault_D14</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 5</name>
+            <modelName>Toyota_Corolla_Classic_Silver_Metal</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 6</name>
+            <modelName>Renault_Kadjar_2016</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 7</name>
+            <modelName>Peugeot_4008_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 8</name>
+            <modelName>Peugeot_301_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 9</name>
+            <modelName>Honda_CBR1000RR</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 10</name>
+            <modelName>Citroen_C2</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 11</name>
+            <modelName>Citroen_DS3_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 12</name>
+            <modelName>Volkswagen_Arteon_R_Line_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 13</name>
+            <modelName>Renault_Zoe_Energy_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 14</name>
+            <modelName>Renault_Megane3_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 15</name>
+            <modelName>Peugeot_108_Barcode</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 16</name>
+            <modelName>Lexus_NX_Nebula_Gray_Pearl</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 17</name>
+            <modelName>Nissan_Altima</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 18</name>
+            <modelName>Peugeot_RCZ_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 19</name>
+            <modelName>Toyota_Corolla_Slate_Metal</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 20</name>
+            <modelName>Citroen_C6_Black</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 21</name>
+            <modelName>Audi_Q8_Black</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 22</name>
+            <modelName>Citroen_DS3_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 23</name>
+            <modelName>Nissan_Qashqai_Dualis_2010</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 24</name>
+            <modelName>Peugeot_301_White</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 25</name>
+            <modelName>Range_Rover_Sport_Green</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 26</name>
+            <modelName>Renault_Megane3_Grey</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 27</name>
+            <modelName>Toyota_Corolla_Barcelona_Red_Metal</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 28</name>
+            <modelName>Citroen_C6_Blue</modelName>
+        </Vehicle>
+        <Vehicle>
+            <name>[Highway] [Swarm] 29</name>
+            <modelName>Renault_Clio_2020_Gris_Titanium</modelName>
         </Vehicle>
     </Scenario>
 </sce>
