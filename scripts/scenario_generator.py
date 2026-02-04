@@ -1,6 +1,7 @@
+from collections import defaultdict
 from lxml import etree
 import argparse
-from typing import Optional
+from typing import Optional, DefaultDict
 
 from utils import (
     load_xml_tree,
@@ -62,35 +63,93 @@ def get_element_path(element: etree._Element, root: etree._Element) -> str:
     
     return f"./{'/'.join(parts)}" if parts else "."
 
-def update_scenario_element(config_element: etree._Element, scenario_element: etree._Element, identifier_tag: str, verbose: bool = True) -> int:
+def update_scenario_element(
+    config_element: etree._Element,
+    scenario_element: etree._Element,
+    identifier_tag: str,
+    tag_stats: Optional[DefaultDict[str, int]],
+    verbose: bool = True
+) -> int:
     """
     Update scenario element's children with values from config element.
+
+    The update runs recursively so nested elements (e.g. Flow/distribution) are
+    also synchronized.
     
     Args:
         config_element: Source element from configuration
         scenario_element: Target element in scenario
-        identifier_tag: Tag name of the identifier (to skip updating)
+        identifier_tag: Tag name of the identifier (to skip updating at root)
+        tag_stats: Accumulator for tag update counts (path -> count)
         verbose: Whether to print update information
         
     Returns:
-        Number of children updated
+        Number of elements updated
     """
+
+    skip_tags = {identifier_tag} if identifier_tag else set()
+    return _update_element_recursive(
+        config_element,
+        scenario_element,
+        skip_tags,
+        tag_stats,
+        verbose,
+        config_element.tag,
+        depth=0
+    )
+
+
+def _update_element_recursive(
+    config_element: etree._Element,
+    scenario_element: etree._Element,
+    skip_tags: set,
+    tag_stats: Optional[DefaultDict[str, int]],
+    verbose: bool,
+    path: str,
+    depth: int
+) -> int:
+    """Recursively copy text values from config_element into scenario_element."""
+
     updated_count = 0
-    
-    for config_element_child in config_element:
 
-        if not isinstance(config_element_child, etree._Element) or config_element_child.tag == identifier_tag:
+    for config_child in config_element:
+        if not isinstance(config_child, etree._Element):
             continue
-        
-        scenario_element_child = scenario_element.find(config_element_child.tag)
 
-        if scenario_element_child is not None:
-            old_text = scenario_element_child.text
-            scenario_element_child.text = config_element_child.text
-            updated_count += 1
-            if verbose:
-                print(f"{config_element_child.tag}: {old_text} -> {config_element_child.text}\n")
-    
+        if depth == 0 and config_child.tag in skip_tags:
+            continue
+
+        scenario_child = scenario_element.find(config_child.tag)
+
+        if scenario_child is None:
+            continue
+
+        child_path = f"{path}/{config_child.tag}" if path else config_child.tag
+
+        has_element_children = any(isinstance(sub_child, etree._Element) for sub_child in config_child)
+
+        if has_element_children:
+            updated_count += _update_element_recursive(
+                config_child,
+                scenario_child,
+                skip_tags,
+                tag_stats,
+                verbose,
+                child_path,
+                depth + 1
+            )
+            continue
+
+        old_text = scenario_child.text
+        scenario_child.text = config_child.text
+        updated_count += 1
+
+        if tag_stats is not None:
+            tag_stats[child_path] += 1
+
+        if verbose:
+            print(f"{child_path}: {old_text} -> {config_child.text}\n")
+
     return updated_count
 
 def merge_configuration_to_scenario(configuration_file: str, scenario_input_file: str, scenario_output_file: str, verbose: bool = True) -> None:
@@ -123,6 +182,7 @@ def merge_configuration_to_scenario(configuration_file: str, scenario_input_file
         # Process elements
         elements_processed = 0
         elements_updated = 0
+        tag_update_counts: DefaultDict[str, int] = defaultdict(int)
         
         print("\nProcessing elements...\n")
         
@@ -173,7 +233,13 @@ def merge_configuration_to_scenario(configuration_file: str, scenario_input_file
                 if verbose:
                     print(f"{element_tag}({identifier_tag}={identifier_value})")
                 
-                children_updated = update_scenario_element(element, scenario_element, identifier_tag, verbose)
+                children_updated = update_scenario_element(
+                    element,
+                    scenario_element,
+                    identifier_tag,
+                    tag_update_counts,
+                    verbose
+                )
                 
                 if children_updated > 0:
                     elements_updated += 1
@@ -183,6 +249,14 @@ def merge_configuration_to_scenario(configuration_file: str, scenario_input_file
         # Summary
         print(f"Elements processed: {elements_processed}")
         print(f"Elements updated: {elements_updated}")
+
+        total_field_updates = sum(tag_update_counts.values())
+        print(f"Field updates: {total_field_updates}")
+
+        if tag_update_counts:
+            print("\nUpdated tag summary:")
+            for tag_path in sorted(tag_update_counts):
+                print(f"- {tag_path}: {tag_update_counts[tag_path]}")
 
         # Serialize and format XML
         print("\nSerializing XML...")
