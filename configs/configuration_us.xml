@@ -135,6 +135,18 @@
             <name>go_straight</name>
             <path>navigation/en/go_straight_long.wav</path>
         </Sound>
+        <Source>
+            <name>[Highway] [Source] 0</name>
+            <Flow>
+                <distribution>highway_US</distribution>
+            </Flow>
+        </Source>
+        <Source>
+            <name>[Highway] [Source] 1</name>
+            <Flow>
+                <distribution>highway_US</distribution>
+            </Flow>
+        </Source>
         <Vehicle>
             <name>[EGO]</name>
             <modelName>ExecutiveCar</modelName>
