@@ -873,7 +873,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 4</name>
-            <modelName>Renault_D14</modelName>
+            <modelName>Renault_Megane3</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 5</name>
@@ -941,7 +941,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 21</name>
-            <modelName>Audi_Q8_Black</modelName>
+            <modelName>BMW_S3_Alpine_White</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 22</name>
