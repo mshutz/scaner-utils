@@ -689,7 +689,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 1</name>
-            <modelName>Ford_Kuga_White_UK_parked</modelName>
+            <modelName>Porsche_Cayenne_White_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 2</name>
@@ -713,11 +713,11 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 7</name>
-            <modelName>Dodge_Ram_2500_Dark_Gray_parked</modelName>
+            <modelName>Peugeot_301_Gray_Alu_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 8</name>
-            <modelName>Lexus_NX_Eminent_White_Pearl_parked</modelName>
+            <modelName>Renault_Zoe_Diamond_Black_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 9</name>
@@ -729,7 +729,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 11</name>
-            <modelName>Toyota_Corolla_Slate_Metal_parked</modelName>
+            <modelName>Peugeot_301_Rich_Oak_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 12</name>
@@ -737,7 +737,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 13</name>
-            <modelName>Ford_Escape_Gold_parked</modelName>
+            <modelName>Renault_Zoe_Calico_Grey_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 14</name>
@@ -749,7 +749,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 16</name>
-            <modelName>Dodge_Ram_2500_White_parked</modelName>
+            <modelName>Citroen_C6_Grey_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 17</name>
@@ -769,7 +769,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 21</name>
-            <modelName>Ford_Escape_Gold_parked</modelName>
+            <modelName>Volkswagen_Touran_Urano_Grey_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 22</name>
@@ -777,7 +777,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 23</name>
-            <modelName>Nissan_Leaf_Pearl_Black_parked</modelName>
+            <modelName>Ford_Escape_White_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 24</name>
@@ -785,7 +785,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 25</name>
-            <modelName>Toyota_Corolla_4evergreen_Mica_parked</modelName>
+            <modelName>Peugeot_308_Dark_Blue_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 26</name>
@@ -805,7 +805,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 30</name>
-            <modelName>Toyota_Corolla_Classic_Silver_Metal_parked</modelName>
+            <modelName>BMW_S3_Alpine_White_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 31</name>
@@ -817,7 +817,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 33</name>
-            <modelName>Nissan_Leaf_Gun_Metal_parked</modelName>
+            <modelName>Holden_Astra_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 34</name>
@@ -825,7 +825,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 35</name>
-            <modelName>Lexus_NX_Obsidian_parked</modelName>
+            <modelName>Peugeot_2008_White_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 36</name>
@@ -849,7 +849,7 @@
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 41</name>
-            <modelName>Toyota_Corolla_Super_White_parked</modelName>
+            <modelName>Renault_Megane3_Grey_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[City] [Parked] Parked car 42</name>
@@ -861,7 +861,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 1 </name>
-            <modelName>Dodge_Ram_2500_Green</modelName>
+            <modelName>Citroen_C4_2010_Blue</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 2</name>
@@ -869,7 +869,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 3 </name>
-            <modelName>Ford_F150_Darkblue_US</modelName>
+            <modelName>Peugeot_RCZ_Dark_Gray</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 4</name>
@@ -877,7 +877,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 5</name>
-            <modelName>Toyota_Corolla_Classic_Silver_Metal</modelName>
+            <modelName>Volkswagen_Touran_Night_Blue_Metal</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 6</name>
@@ -921,11 +921,11 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 16</name>
-            <modelName>Lexus_NX_Nebula_Gray_Pearl</modelName>
+            <modelName>Peugeot_4008_Dark_Red</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 17</name>
-            <modelName>Nissan_Altima</modelName>
+            <modelName>Volkswagen_Touran_Pure_White</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 18</name>
@@ -933,7 +933,7 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 19</name>
-            <modelName>Toyota_Corolla_Slate_Metal</modelName>
+            <modelName>Peugeot_508_Brun_Calern_parked</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 20</name>
@@ -965,11 +965,11 @@
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 27</name>
-            <modelName>Toyota_Corolla_Barcelona_Red_Metal</modelName>
+            <modelName>BMW_S3_Black_Sapphire</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 28</name>
-            <modelName>Citroen_C6_Blue</modelName>
+            <modelName>Ford_Escape_Black</modelName>
         </Vehicle>
         <Vehicle>
             <name>[Highway] [Swarm] 29</name>
